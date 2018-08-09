@@ -5,23 +5,22 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.validation.constraints.Email;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import javax.validation.constraints.*;
 
 @NoArgsConstructor
 @Getter
 @Setter
 @AllArgsConstructor
 public class Contact {
-
+    @PositiveOrZero
     private int id;
-    @NotEmpty
+    @NotEmpty(message = "first name " + ErrorMessage.EMPTY)
+    @Size(max = 20, message = "first name " + ErrorMessage.OUT_OF_LENGTH)
     private String firstName;
-    @NotEmpty
+    @NotEmpty(message = "last name " + ErrorMessage.EMPTY)
     private String lastName;
-    @NotEmpty
+    @NotEmpty(message = "date of birth " + ErrorMessage.EMPTY)
+    @Pattern(regexp = "", message = "date of birth " + ErrorMessage.INVALID_FORMAT)
     private String dateOfBirth;
     @Size(max = 20)
     @NotEmpty

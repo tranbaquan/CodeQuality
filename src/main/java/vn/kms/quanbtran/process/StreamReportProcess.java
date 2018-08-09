@@ -53,7 +53,7 @@ public class StreamReportProcess implements ReportProcess {
 
     @Override
     public void extract() {
-        data = lines.flatMap(line -> Stream.of(line.split("\t")))
-                .map(word -> word.trim()).collect(Collectors.toList());
+        data = lines.collect(Collectors.toList());
+        data.remove(0);
     }
 }

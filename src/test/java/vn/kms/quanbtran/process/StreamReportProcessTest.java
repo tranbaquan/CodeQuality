@@ -4,8 +4,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class StreamReportProcessTest {
 
     private StreamReportProcess streamReportProcess;
@@ -28,6 +26,8 @@ public class StreamReportProcessTest {
 
     @Test
     public void extract() {
+        streamReportProcess.extract();
+        System.out.println(streamReportProcess.getData());
     }
 
     @Test

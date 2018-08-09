@@ -1,15 +1,9 @@
 package vn.kms.quanbtran.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
+public class ErrorMessage {
 
-@AllArgsConstructor
-public enum ErrorMessage {
-
-    NOT_EMPTY("not be empty"),
-    OUT_OF_LENGTH("length not be greater ");
-
-    @Getter
-    private final String message;
+    public static final String EMPTY = "is empty";
+    public static final String OUT_OF_LENGTH = "is out of length";
+    public static final String INVALID_FORMAT = "is invalid format";
 
 }

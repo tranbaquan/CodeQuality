@@ -7,6 +7,10 @@ import org.junit.runner.RunWith;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
+import javax.validation.*;
+
+import java.util.Set;
+
 import static org.junit.Assert.*;
 
 @RunWith(MockitoJUnitRunner.class)
@@ -39,6 +43,16 @@ public class ContactTest {
         assertEquals(contact.getEmail(), "quanbtran@kms-technology.com");
         assertEquals(contact.getWeb(), "tranbaquan.com.vn");
 
+    }
+
+    @Test
+    public void testValidator(){
+        ValidatorFactory factory = Validation.buildDefaultValidatorFactory();
+        Validator validator = factory.getValidator();
+        Set<ConstraintViolation<Contact>> log = validator.validate(contact);
+        for (ConstraintViolation<Contact> violation : log) {
+            System.out.println(violation.getMessage());
+        }
     }
 
 }
