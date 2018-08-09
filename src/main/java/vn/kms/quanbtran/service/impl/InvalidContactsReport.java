@@ -1,4 +1,10 @@
 package vn.kms.quanbtran.service.impl;
 
-public class InvalidContactsReport {
+import vn.kms.quanbtran.service.ReportService;
+
+public class InvalidContactsReport implements ReportService {
+    @Override
+    public void report() {
+
+    }
 }

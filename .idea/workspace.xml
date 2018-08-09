@@ -4,11 +4,17 @@
     <list default="true" id="035e243a-616f-420a-bb7e-adf523fae06a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/lauch/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/lauch/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/model/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/model/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/model/Contact.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/model/PhoneList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/model/PhoneList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/vn/kms/quanbtran/model/ContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vn/kms/quanbtran/model/ContactTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/ioreader/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/ioreader/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/process/ReportProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/process/ReportProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/factory/ReportFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/factory/ReportFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/ContactsPerAgeGroupsReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/ContactsPerAgeGroupsReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/ContactsPerStatesReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/ContactsPerStatesReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/InvalidContactsPerColumnNameReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/InvalidContactsPerColumnNameReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/InvalidContactsReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/InvalidContactsReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/ValidContactsReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/ValidContactsReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/vn/kms/quanbtran/model/AddressTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/vn/kms/quanbtran/model/AddressTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/vn/kms/quanbtran/model/ContactTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/vn/kms/quanbtran/model/ContactTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/vn/kms/quanbtran/model/PhoneListTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/vn/kms/quanbtran/model/PhoneListTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,28 +38,28 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
-          <entry key="java" value="32" />
+          <entry key="java" value="65" />
           <entry key="xml" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="32" />
+          <entry key="JAVA" value="65" />
           <entry key="XML" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="6" />
-          <entry key="java" value="2302" />
+          <entry key="dummy" value="7" />
+          <entry key="java" value="3312" />
           <entry key="xml" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2302" />
-          <entry key="PLAIN_TEXT" value="6" />
+          <entry key="JAVA" value="3312" />
+          <entry key="PLAIN_TEXT" value="7" />
           <entry key="XML" value="11" />
         </counts>
       </usages-collector>
@@ -62,48 +68,101 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/model/Contact.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/process/StreamReportProcess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
+            <state relative-caret-position="415">
+              <caret line="56" column="40" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1105#1106#0" expanded="true" />
+                <element signature="e#1125#1126#0" expanded="true" />
+                <element signature="e#901#902#0" expanded="true" />
+                <element signature="e#939#940#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/model/Address.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/process/convert/ConvertToContact.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="34">
+              <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/process/ReportProcess.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/vn/kms/quanbtran/process/convert/ConvertToContactTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+            <state relative-caret-position="34">
+              <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/factory/ReportFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#177#178#0" expanded="true" />
-                <element signature="e#198#199#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/lauch/Application.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/ContactsPerStatesReport.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/ReportService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/InvalidContactsPerColumnNameReport.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/InvalidContactsReport.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/ValidContactsReport.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/ContactsPerAgeGroupsReport.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
@@ -113,10 +172,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -134,16 +193,32 @@
         <option value="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/ReportService.java" />
         <option value="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/validator/Validator.java" />
         <option value="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/ServiceType.java" />
-        <option value="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/factory/ReportFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/ContactsPerStatesReport.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/model/ContactErrorMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/model/ErrorMessage.java" />
         <option value="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/model/Contact.java" />
         <option value="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/model/Address.java" />
-        <option value="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/ioreader/Reader.java" />
         <option value="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/lauch/Application.java" />
+        <option value="$PROJECT_DIR$/src/test/java/vn/kms/quanbtran/process/ReportProcessTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/vn/kms/quanbtran/service/factory/ReportFactoryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/vn/kms/quanbtran/service/ReportServiceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/vn/kms/quanbtran/service/impl/ContactsPerAgeGroupsReportTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/vn/kms/quanbtran/service/impl/ContactsPerStatesReportTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/vn/kms/quanbtran/service/impl/InvalidContactsPerColumnNameReportTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/vn/kms/quanbtran/service/impl/InvalidContactsReportTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/vn/kms/quanbtran/service/impl/ValidContactsReportTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/ioreader/Reader.java" />
+        <option value="$PROJECT_DIR$/src/test/java/vn/kms/quanbtran/ioreader/ReaderTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/process/ReportProcess.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/process/StreamReportProcess.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/process/ReaderReportProcess.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/ContactsPerAgeGroupsReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/ContactsPerStatesReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/InvalidContactsPerColumnNameReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/InvalidContactsReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/ValidContactsReport.java" />
+        <option value="$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/factory/ReportFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/vn/kms/quanbtran/process/convert/ConvertToContactTest.java" />
       </list>
     </option>
   </component>
@@ -203,33 +278,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="quanbtran" type="462c0819:PsiDirectoryNode" />
-              <item name="ioreader" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CodeQuality" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CodeQuality" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="quanbtran" type="462c0819:PsiDirectoryNode" />
-              <item name="lauch" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CodeQuality" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CodeQuality" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="quanbtran" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CodeQuality" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CodeQuality" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="quanbtran" type="462c0819:PsiDirectoryNode" />
               <item name="process" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -276,30 +324,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="CodeQuality" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CodeQuality" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CodeQuality" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CodeQuality" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="quanbtran" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CodeQuality" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CodeQuality" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="quanbtran" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -308,15 +332,18 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533796386137" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533802969370" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="vn.kms.quanbtran.model" />
-      <recent name="vn.kms.quanbtran.lauch" />
+      <recent name="vn.kms.quanbtran.process.convert" />
+      <recent name="vn.kms.quanbtran.ioreader" />
+      <recent name="vn.kms.quanbtran.service.impl" />
+      <recent name="vn.kms.quanbtran.service" />
+      <recent name="vn.kms.quanbtran.service.factory" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -337,7 +364,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.PhoneListTest.testAddPhoneNumber_shouldBeSuccessful">
+  <component name="RunManager" selected="Application.ReportProcess">
+    <configuration name="ReportProcess" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="vn.kms.quanbtran.process.ReportProcess" />
+      <module name="CodeQuality" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vn.kms.quanbtran.process.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AddressTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CodeQuality" />
       <extension name="coverage">
@@ -348,20 +388,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="vn.kms.quanbtran.model" />
       <option name="MAIN_CLASS_NAME" value="vn.kms.quanbtran.model.AddressTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ContactTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CodeQuality" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="vn.kms.quanbtran.model.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="vn.kms.quanbtran.model" />
-      <option name="MAIN_CLASS_NAME" value="vn.kms.quanbtran.model.ContactTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -398,18 +424,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReaderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CodeQuality" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vn.kms.quanbtran.ioreader.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="vn.kms.quanbtran.ioreader" />
+      <option name="MAIN_CLASS_NAME" value="vn.kms.quanbtran.ioreader.ReaderTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.ContactTest" />
       <item itemvalue="JUnit.ContactTest.testGetContactInfo_shouldBeSuccessful" />
       <item itemvalue="JUnit.AddressTest" />
       <item itemvalue="JUnit.PhoneListTest.testAddPhoneNumber_shouldBeSuccessful" />
+      <item itemvalue="JUnit.ReaderTest" />
+      <item itemvalue="Application.ReportProcess" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReportProcess" />
+        <item itemvalue="JUnit.ReaderTest" />
         <item itemvalue="JUnit.PhoneListTest.testAddPhoneNumber_shouldBeSuccessful" />
         <item itemvalue="JUnit.AddressTest" />
         <item itemvalue="JUnit.ContactTest.testGetContactInfo_shouldBeSuccessful" />
-        <item itemvalue="JUnit.ContactTest" />
       </list>
     </recent_temporary>
   </component>
@@ -427,24 +469,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ContactTest_testGetContactInfo_shouldBeSuccessful - 2018.08.09 at 09h 24m 32s.xml">
-      <configuration name="ContactTest.testGetContactInfo_shouldBeSuccessful" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ContactTest_testGetContactInfo_shouldBeSuccessful - 2018.08.09 at 09h 25m 03s.xml">
-      <configuration name="ContactTest.testGetContactInfo_shouldBeSuccessful" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ContactTest_testGetContactInfo_shouldBeSuccessful - 2018.08.09 at 09h 25m 34s.xml">
-      <configuration name="ContactTest.testGetContactInfo_shouldBeSuccessful" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ContactTest_testGetContactInfo_shouldBeSuccessful - 2018.08.09 at 09h 26m 16s.xml">
-      <configuration name="ContactTest.testGetContactInfo_shouldBeSuccessful" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ContactTest_testGetContactInfo_shouldBeSuccessful - 2018.08.09 at 09h 26m 30s.xml">
-      <configuration name="ContactTest.testGetContactInfo_shouldBeSuccessful" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ContactTest_testGetContactInfo_shouldBeSuccessful - 2018.08.09 at 09h 48m 43s.xml">
-      <configuration name="ContactTest.testGetContactInfo_shouldBeSuccessful" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ContactTest_testGetContactInfo_shouldBeSuccessful - 2018.08.09 at 09h 57m 18s.xml">
       <configuration name="ContactTest.testGetContactInfo_shouldBeSuccessful" configurationId="JUnit" />
     </history-entry>
@@ -457,12 +481,29 @@
     <history-entry file="PhoneListTest_testAddPhoneNumber_shouldBeSuccessful - 2018.08.09 at 10h 01m 49s.xml">
       <configuration name="PhoneListTest.testAddPhoneNumber_shouldBeSuccessful" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ReaderTest - 2018.08.09 at 14h 04m 13s.xml">
+      <configuration name="ReaderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReaderTest - 2018.08.09 at 14h 06m 03s.xml">
+      <configuration name="ReaderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReaderTest - 2018.08.09 at 14h 06m 46s.xml">
+      <configuration name="ReaderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReaderTest - 2018.08.09 at 14h 11m 19s.xml">
+      <configuration name="ReaderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReaderTest - 2018.08.09 at 14h 12m 13s.xml">
+      <configuration name="ReaderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ReaderTest - 2018.08.09 at 14h 12m 40s.xml">
+      <configuration name="ReaderTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25746268" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -471,7 +512,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -518,13 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/ValidContactsReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/vn/kms/quanbtran/model/ContactTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -559,27 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/ReportService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/InvalidContactsReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/ContactsPerAgeGroupsReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -587,64 +600,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/InvalidContactsPerColumnNameReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/model/Contact.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="10" selection-start-line="25" selection-start-column="10" selection-end-line="25" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/process.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/factory/ReportFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/ContactsPerStatesReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/model/ErrorMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/ioreader/Reader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -672,15 +631,205 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/process/ReportProcess.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/model/Contact.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        <state relative-caret-position="340">
+          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#177#178#0" expanded="true" />
-            <element signature="e#198#199#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/model/ErrorMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/vn/kms/quanbtran/process/ReportProcessTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/vn/kms/quanbtran/service/factory/ReportFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/vn/kms/quanbtran/service/ReportServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/vn/kms/quanbtran/service/impl/ContactsPerAgeGroupsReportTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/vn/kms/quanbtran/service/impl/InvalidContactsPerColumnNameReportTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/vn/kms/quanbtran/service/impl/InvalidContactsReportTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/vn/kms/quanbtran/service/impl/ValidContactsReportTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/vn/kms/quanbtran/service/impl/ContactsPerStatesReportTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/vn/kms/quanbtran/ioreader/ReaderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#479#480#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/ioreader/Reader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/process/ReportProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/process/ReaderReportProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="47" column="39" selection-start-line="47" selection-start-column="39" selection-end-line="47" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#699#700#0" expanded="true" />
+            <element signature="e#735#736#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/ReportService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/ContactsPerAgeGroupsReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/ContactsPerStatesReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/InvalidContactsPerColumnNameReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/InvalidContactsReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/impl/ValidContactsReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/service/factory/ReportFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/process/StreamReportProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="56" column="40" selection-start-line="56" selection-start-column="40" selection-end-line="56" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1105#1106#0" expanded="true" />
+            <element signature="e#1125#1126#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
+            <element signature="e#939#940#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vn/kms/quanbtran/process/convert/ConvertToContact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/vn/kms/quanbtran/process/convert/ConvertToContactTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
         </state>
       </provider>
     </entry>

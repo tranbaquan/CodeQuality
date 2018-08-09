@@ -1,25 +1,31 @@
 package vn.kms.quanbtran.process;
 
+import jdk.nashorn.internal.objects.annotations.Setter;
 import lombok.Getter;
-import lombok.Setter;
+
 import vn.kms.quanbtran.ioreader.Reader;
 import vn.kms.quanbtran.service.ReportService;
 import vn.kms.quanbtran.service.ServiceType;
 import vn.kms.quanbtran.service.factory.ReportFactory;
 
-public class ReportProcess {
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
-    private Reader reader;
-    @Getter
-    private ReportService reportService;
+public interface ReportProcess {
 
-    public void open(String sourceFile){
-        reader.openStream(sourceFile);
-    }
+    void open(String sourceFile);
 
-    public void setReportService(ServiceType serviceType){
-        ReportFactory reportFactory = new ReportFactory();
-        this.reportService = reportFactory.create(serviceType);
-    }
+    void setReportService(ServiceType serviceType);
+
+    void close();
+
+    void exportStatistic();
+
+    void extract();
 
 }
