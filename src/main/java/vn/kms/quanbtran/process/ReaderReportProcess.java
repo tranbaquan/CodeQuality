@@ -7,8 +7,6 @@ import vn.kms.quanbtran.service.ReportService;
 import vn.kms.quanbtran.service.ServiceType;
 import vn.kms.quanbtran.service.factory.ReportFactory;
 
-import java.util.List;
-
 public class ReaderReportProcess implements ReportProcess{
 
     private Reader reader;
@@ -40,11 +38,11 @@ public class ReaderReportProcess implements ReportProcess{
         reader.readLine();
         String line;
         while ((line = reader.readLine()) != null){
-            handleData();
+            handleData(line);
         }
     }
 
-    public void handleData(){
+    private void handleData(String line){
         // TODO filter data add to list
     }
 }

@@ -14,14 +14,11 @@ public class PhoneListTest {
 
     @Before
     public void setUp(){
-
         this.phoneList = new PhoneList();
-
     }
 
     @Test
     public void testAddPhoneNumber_shouldBeSuccessful(){
-
         this.phoneList.add("132-123-132");
         assertEquals(this.phoneList.getPhoneNumbers().size(), 1);
 
