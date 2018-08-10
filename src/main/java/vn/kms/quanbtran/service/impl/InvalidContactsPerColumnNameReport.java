@@ -24,19 +24,33 @@ public class InvalidContactsPerColumnNameReport extends ReportServiceAbstract im
         ReportWriter reportWriter = new ReportWriter();
         Writer writer = reportWriter.openFile(destFile, FILE_NAME);
 
+        for (Contact contact : data) {
+            Set<ConstraintViolation<Contact>> log = validate(contact);
+            log.stream().forEach(error -> {
+                int value = filter.get(error.getPropertyPath());
+                filter.put(error.getPropertyPath().toString(), value + 1);
+            });
+
+        }
+
         try {
             writer.write("contact_id\terror_field\terror_message\n");
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        for (Contact contact : data) {
-            Set<ConstraintViolation<Contact>> log = validate(contact);
+        for (String field: filter.keySet()) {
+            StringBuilder s = new StringBuilder();
+            s.append(field);
+            s.append("\t");
+            s.append(filter.get(field));
+            s.append("\n");
 
-            log.stream().forEach(error -> {
-               filter.put(error.getPropertyPath().toString(), filter.get(error.getPropertyPath()) + 1);
-            });
-
+            try {
+                writer.write(s.toString());
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
 }
