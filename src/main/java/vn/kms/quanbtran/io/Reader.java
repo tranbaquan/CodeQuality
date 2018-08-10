@@ -1,4 +1,4 @@
-package vn.kms.quanbtran.ioreader;
+package vn.kms.quanbtran.io;
 
 import lombok.NoArgsConstructor;
 

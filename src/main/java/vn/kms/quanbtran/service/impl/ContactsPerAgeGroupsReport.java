@@ -1,10 +1,14 @@
 package vn.kms.quanbtran.service.impl;
 
+import vn.kms.quanbtran.model.Contact;
 import vn.kms.quanbtran.service.ReportService;
 
-public class ContactsPerAgeGroupsReport implements ReportService {
-    @Override
-    public void report() {
+import java.util.List;
 
+public class ContactsPerAgeGroupsReport implements ReportService {
+
+    @Override
+    public void report(List<Contact> data, String destFile) {
+        // TODO
     }
 }

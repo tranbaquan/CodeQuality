@@ -1,27 +1,14 @@
 package vn.kms.quanbtran.process;
 
-import lombok.Getter;
+import vn.kms.quanbtran.io.Reader;
 
-import vn.kms.quanbtran.ioreader.Reader;
-import vn.kms.quanbtran.service.ReportService;
-import vn.kms.quanbtran.service.ServiceType;
-import vn.kms.quanbtran.service.factory.ReportFactory;
-
-public class ReaderReportProcess implements ReportProcess{
+public class ReaderReportProcess extends ReportProcessAbstract implements ReportProcess{
 
     private Reader reader;
-    @Getter
-    private ReportService reportService;
-
 
     public void open(String sourceFile) {
         reader = new Reader();
         reader.openStream(sourceFile);
-    }
-
-    public void setReportService(ServiceType serviceType) {
-        ReportFactory reportFactory = new ReportFactory();
-        this.reportService = reportFactory.create(serviceType);
     }
 
     public void close() {
@@ -29,20 +16,11 @@ public class ReaderReportProcess implements ReportProcess{
     }
 
     @Override
-    public void exportStatistic() {
-
-    }
-
-    @Override
     public void extract() {
         reader.readLine();
         String line;
         while ((line = reader.readLine()) != null){
-            handleData(line);
+            data.add(line);
         }
-    }
-
-    private void handleData(String line){
-        // TODO filter data add to list
     }
 }
